@@ -1,6 +1,5 @@
 import {Site} from './site'
 import {Sidebar} from './sidebar'
-import {Navigation} from "./navigation";
 
 export class App {
   constructor(model) {
@@ -8,8 +7,6 @@ export class App {
   }
 
   init() {
-    new Navigation('#header').render()
-
     const site = new Site('#site')
     site.render(this.model)
 
